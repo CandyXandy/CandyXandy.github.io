@@ -1,6 +1,6 @@
 import React from 'react'
 import './Navbar.css'
-import logo from "../../assets/headshot.jpg"
+import logo from "../../assets/logo.svg"
 
 const Navbar = () => {
     return (
@@ -9,6 +9,7 @@ const Navbar = () => {
             <ul className="nav-menu">
                 <li>Home</li>
                 <li>About Me</li>
+                <li>Resume</li>
                 <li>Portfolio</li>
                 <li>Contact</li>
             </ul>
