@@ -1,4 +1,4 @@
-import React from 'react'
+
 import './Portfolio.css'
 import theme_pattern from '../../assets/theme_pattern.svg'
 

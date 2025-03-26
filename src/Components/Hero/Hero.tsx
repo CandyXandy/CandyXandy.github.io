@@ -1,4 +1,4 @@
-import React from 'react'
+
 import "./Hero.css"
 import profile_img from "../../assets/headshot.jpg"
 
