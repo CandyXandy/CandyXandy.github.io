@@ -6,7 +6,7 @@ import portfolio_data from '../../assets/Portfolio Entries/portfolio_data.ts'
 
 const Portfolio = () => {
     return (
-        <div className='portfolio'>
+        <div id="portfolio" className='portfolio'>
             <div className="portfolio-title">
                 <h1>Portfolio</h1>
                 <img src={theme_pattern} alt="" />
