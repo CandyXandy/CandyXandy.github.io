@@ -1,4 +1,4 @@
-
+import { FormEvent } from 'react'
 import './Contact.css'
 import theme_pattern from '../../assets/theme_pattern.svg'
 import mail_icon from '../../assets/mail_icon.svg'
@@ -6,6 +6,34 @@ import location_icon from '../../assets/location_icon.svg'
 import call_icon from '../../assets/call_icon.svg'
 
 const Contact = () => {
+
+    const onSubmit = async (event: FormEvent<HTMLFormElement>) => {
+        event.preventDefault();
+        // type event target as HTMLFormElement
+        const form = event.target as HTMLFormElement;
+        const formData = new FormData(form);
+
+        formData.append("access_key", "9c2222b0-228b-4df4-a8d4-e6f7a666056a");
+
+        const object = Object.fromEntries(formData);
+        const json = JSON.stringify(object);
+
+        const res = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                Accept: "application/json"
+            },
+            body: json
+        }).then((res) => res.json());
+
+        if (res.success) {
+
+            alert(res.message);
+
+            //console.log("Success", res);
+        }
+    }
     return (
         <div id='contact' className='contact'>
             <div className="contact-title">
@@ -31,7 +59,7 @@ const Contact = () => {
                         </div>
                     </div>
                 </div>
-                <form className="contact-right">
+                <form onSubmit={onSubmit} className="contact-right">
                     <label htmlFor=''>Your Name</label>
                     <input type="text" placeholder='Enter your name..' name='name' />
                     <label htmlFor="">Your Email</label>
