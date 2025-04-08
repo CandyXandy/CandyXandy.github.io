@@ -6,14 +6,18 @@ import Portfolio from './Components/Portfolio/Portfolio'
 import Contact from './Components/Contact/Contact'
 import Footer from './Components/Footer/Footer'
 
+import './App.css'
+
 const App = () => {
   return (
-    <div>
+    <div className='container'>
       <Navbar />
-      <Hero />
-      <About />
-      <Portfolio />
-      <Contact />
+      <div className='page'>
+        <Hero />
+        <About />
+        <Portfolio />
+        <Contact />
+      </div>
       <Footer />
     </div>
   )
