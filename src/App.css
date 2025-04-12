@@ -1,13 +1,4 @@
 #root {
   margin: 0;
   text-align: center;
-  overflow-y: hidden;
-}
-
-
-.page {
-  overflow-y: scroll;
-  height: 90vh;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
 }
