@@ -49,6 +49,10 @@
     transform: scale(1.05);
 }
 
+.nav-connect:active {
+    transform: scale(0.9);
+}
+
 .anchor-link {
     text-decoration: none;
     color: white;

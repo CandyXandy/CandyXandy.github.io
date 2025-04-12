@@ -28,6 +28,7 @@
     border-radius: 50px;
     background: #32323B;
     padding-right: 80px;
+    border: 2px solid #161513;
 }
 
 .footer-email-input input {
@@ -56,6 +57,11 @@
     transform: scale(1.1);
     transition: 0.3s;
 }
+
+.footer-subscribe:active {
+    transform: scale(0.9);
+}
+
 
 .footer-bot {
     display: flex;

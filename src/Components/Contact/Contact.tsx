@@ -7,6 +7,10 @@ import call_icon from '../../assets/call_icon.svg'
 
 const Contact = () => {
 
+    /**
+     * onSubmit handles the event that fires when the user clicks the submit button on the contact form
+     * @param event : the event that fired
+     */
     const onSubmit = async (event: FormEvent<HTMLFormElement>) => {
         event.preventDefault();
         // type event target as HTMLFormElement
