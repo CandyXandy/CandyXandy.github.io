@@ -1,7 +1,6 @@
 
 import './About.css'
 import theme_pattern from '../../assets/theme_pattern.svg'
-import profile_img from '../../assets/headshot.jpg'
 
 const About = () => {
     return (
@@ -11,10 +10,6 @@ const About = () => {
                 <img src={theme_pattern} alt="" />
             </div>
             <div className="about-section">
-
-                <div className="about-left">
-                    <img src={profile_img} alt="" />
-                </div>
 
                 <div className="about-right">
                     <p>
