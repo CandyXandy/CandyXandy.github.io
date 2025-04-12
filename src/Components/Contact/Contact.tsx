@@ -13,6 +13,7 @@ const Contact = () => {
         const form = event.target as HTMLFormElement;
         const formData = new FormData(form);
 
+        // public key, it does not matter that this is exposed.
         formData.append("access_key", "9c2222b0-228b-4df4-a8d4-e6f7a666056a");
 
         const object = Object.fromEntries(formData);
@@ -61,11 +62,11 @@ const Contact = () => {
                 </div>
                 <form onSubmit={onSubmit} className="contact-right">
                     <label htmlFor=''>Your Name</label>
-                    <input type="text" placeholder='Enter your name..' name='name' />
+                    <input type="text" placeholder='Enter your name..' name='name' required />
                     <label htmlFor="">Your Email</label>
-                    <input type="email" placeholder='Enter your e-mail address..' name='email' />
+                    <input type="email" placeholder='Enter your e-mail address..' name='email' required />
                     <label htmlFor=''>Write your message here</label>
-                    <textarea name="message" rows={8} placeholder='Enter your message..' />
+                    <textarea name="message" rows={8} placeholder='Enter your message..' required />
                     <button type="submit" className="contact-submit">Submit Now!</button>
                 </form>
             </div>
