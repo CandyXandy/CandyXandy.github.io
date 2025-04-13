@@ -16,6 +16,10 @@ const Portfolio = () => {
     }
 
 
+    function portfolioImgClickHandler(link: string) {
+        window.open(link, '_blank')?.focus();
+    }
+
     return (
         <div id="portfolio" className='portfolio'>
             <div className="portfolio-title">
@@ -24,7 +28,7 @@ const Portfolio = () => {
             </div>
             <div className="mywork-container">
                 {portfolio_data.map((key, index) => {
-                    return <img key={index} src={key.w_img} alt="" />
+                    return <img key={index} src={key.w_img} alt="" onClick={() => portfolioImgClickHandler(key.w_link)} />
                 })}
             </div>
             <div className="mywork-showmore" onClick={githubClickHandler}>
