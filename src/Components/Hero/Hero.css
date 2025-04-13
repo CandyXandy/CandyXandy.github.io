@@ -52,13 +52,24 @@
     border: 2px solid #FFF;
 }
 
+.hero-connect:active {
+    transform: scale(0.9);
+    transition: 0.8s;
+}
+
 .hero-resume {
     padding: 25px 75px;
     border-radius: 50px;
+    color: white;
     border: 2px solid #FFF;
     cursor: pointer;
 }
 
 .hero-resume:hover {
     border-color: #B415FF;
+}
+
+.hero-resume:active {
+    transform: scale(0.9);
+    transition: 0.9s;
 }
