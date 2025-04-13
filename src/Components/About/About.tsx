@@ -22,7 +22,7 @@ const About = () => {
                     </p>
                     <div className="about-skills">
                         <div className="about-skill"><p>Programming: Go (Golang), Java, JavaScript, SQL (PL/SQL), SAS, Python, C++, C#, C</p></div>
-                        <div className="about-skill"><p>Frameworks/Libraries: Spring Framework, Swing, Vue.js, Node.js, react.js, gRPC</p></div>
+                        <div className="about-skill"><p>Frameworks/Libraries: Spring Framework, Swing, Vue.js, Node.js, React.js, gRPC</p></div>
                         <div className="about-skill"><p>Databases/ORM: JDBC, PostgreSQL, MySQL</p></div>
                         <div className="about-skill"><p>DevOps/Cloud: Docker, Kubernetes, Jenkins, Maven, Git, CI/CD Pipelines</p></div>
                         <div className="about-skill"><p>Practices: Agile/Scrum, Test-Driven Development (TDD), Legacy System Modernisation, RESTful APIs</p></div>
