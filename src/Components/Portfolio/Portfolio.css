@@ -81,6 +81,17 @@
     transform: translateY(-50%) translateX(0);
 }
 
+@media(max-width: 768px) {
+    .mywork-container .mywork-item .portfolio-tooltip {
+        left: 0%;
+        top: -50%;
+    }
+
+    .mywork-container .mywork-item:nth-child(odd) .portfolio-tooltip {
+        left: 0%;
+    }
+}
+
 .portfolio-tooltip h3 {
     font-size: 1.3rem;
     margin-bottom: 0.5rem;
